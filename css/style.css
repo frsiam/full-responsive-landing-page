@@ -1,0 +1,36 @@
+/* -----------------------*\
+     Font family link 
+\*------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* -----------------------*\
+        starting css 
+\*------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------------*\
+     common emlement css 
+\*------------------------*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------------*\
+     common css class
+\*------------------------*/
+
+
+/* --------------------------------*\
+        navigation css 
+\*----------------------------------*/
+
+
+/* ------------------------------*\
+        hero area css 
+\*-------------------------------*/
