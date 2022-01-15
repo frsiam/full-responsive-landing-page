@@ -44,11 +44,11 @@ header{
     color: #FFF;
     outline: 0;
     border: 0;
-    padding: 15px 30px;
+    padding: 10px 20px;
     font-size: 18px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background-image: linear-gradient(90deg, #9b0457,#FF008E);
-    border-radius: 25px;
+    border-radius: 0 8px;
     cursor: pointer;
     box-shadow: 0 7px 0 #bb106e;
     position: relative;
@@ -213,6 +213,9 @@ header{
 
 /* card section end  */
 
+
+/* See more button start  */
+
 #see-more{
     margin-right: 20px;
     margin-bottom: 50px;
@@ -228,9 +231,11 @@ header{
     color: rgb(255, 0, 128);
     outline: 0;
     border: 0;
+    border-radius: 10px 0;
     padding: 15px 30px;
     font-size: 18px;
     font-weight: 700;
+    background-color: white;
     /* text-transform: uppercase;
     background-image: linear-gradient(90deg, #E21717,#FF008E);
     border-radius: 25px;
@@ -242,5 +247,63 @@ header{
 }
 .see-button:hover{
     background-image: linear-gradient(90deg, #383CC1,#FF008E);
+    color: whitesmoke;
+}
+
+/* See more button end */
+
+/* Bonus part start  */
+
+.bonus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 60px;
+}
+.right h1{
+    font-size: 30px;
+}
+.right p{
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+.left img{
+    width: 450px;
+    height: 250px;
+    border-radius: 20px 0;
+}
+
+/* Bonus part end */
+
+
+/* footer section start */
+footer{
+    margin-top: 150px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: whitesmoke;
+    background-color: #03203C;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first p{
+    font-size: 14px;
+    padding: 3px;
+}
+.end i{
+    margin-right: 5px;
+    padding: 8px;
+    font-size: 20px;
+}
+.end a i{
     color: whitesmoke;
 }
