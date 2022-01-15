@@ -41,7 +41,6 @@ header{
     border: 0;
     padding: 10px 20px;
     font-size: 18px;
-    /* text-transform: uppercase; */
     background-image: linear-gradient(90deg, #9b0457,#FF008E);
     border-radius: 0 8px;
     cursor: pointer;
@@ -57,6 +56,7 @@ header{
 /* --------------------------------*\
         navigation css 
 \*----------------------------------*/
+
 .navigation{
     display: flex;
     height: 100px;
@@ -141,6 +141,7 @@ header{
     padding: 60px 0;
     width: 100%;
 }
+
 .logo-section img:hover{
     transform: scale(1.4) rotate(360deg);
     transition: transform ease-in-out 1s;
@@ -159,8 +160,8 @@ header{
 .cards{
     display: grid;
     grid-gap: 0px 40px;
-    /* grid-template-columns: repeat(3,1fr); */
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
 }
 .card-header{
     text-align: center;
@@ -173,6 +174,15 @@ header{
     box-shadow: 0 0 24px -7px #CAD5E2;
     border-radius: 5px;
 }
+
+.card-start img:hover{
+    transform: scale(1.2);
+    transition: transform ease-in-out 10s;
+}
+.card-start img{
+    overflow: hidden;
+}
+
 .card-body:hover{
     transform: scale(1.1);
     transition: transform ease-in-out 0.5s;
@@ -236,13 +246,6 @@ header{
     font-size: 18px;
     font-weight: 700;
     background-color: white;
-    /* text-transform: uppercase;
-    background-image: linear-gradient(90deg, #E21717,#FF008E);
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0 7px 0 #bb106e;
-    position: relative;
-    top: 0; */
     cursor: pointer;
 }
 .see-button:hover{
@@ -308,3 +311,5 @@ footer{
 .end a i{
     color: whitesmoke;
 }
+
+/* footer section end  */
