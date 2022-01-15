@@ -20,9 +20,6 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-header{
-    height: 100vh;
-}
 
 /* -----------------------*\
      common css class
@@ -97,6 +94,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: calc(100vh - 130px);
+    min-height: 500px;
 }
 .section-left{
     display: flex;
@@ -154,12 +152,11 @@ header{
 
 .card-section{
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
 }
 .cards{
     display: grid;
     grid-gap: 0px 40px;
+    justify-content: center;
     grid-template-columns: repeat(3,1fr);
     /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
 }
@@ -171,6 +168,7 @@ header{
     margin: 40px 0;
     padding:20px 10px 0px 20px;
     width: 340px;
+    box-sizing: border-box;
     box-shadow: 0 0 24px -7px #CAD5E2;
     border-radius: 5px;
 }
@@ -325,3 +323,97 @@ footer{
 }
 
 /* footer section end  */
+
+/* Responsive CSS queri for mobile */
+
+@media (max-width:393px){
+    .menu{
+        flex-direction: column;
+    }
+    .hero-area{
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .logo-section{
+        grid-template-columns: repeat(3,1fr);
+        border: 0;
+        grid-gap: 40px;
+    }
+    .section-left{
+        align-items: center;
+        margin-left: 30px;
+        order: 2;
+    }
+    .section-right{
+        background-image: none;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .bonus{
+        grid-template-columns: 1fr;
+        /* margin-bottom: 50px; */
+        padding-bottom: 100px;
+        padding-top: 0;
+        margin: 0;
+    }
+    .left img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Responsive CSS queri for Tablet */
+
+@media (min-width:394px) and (max-width:920px){
+    .menu li{
+        margin-right: 15px;
+    }
+    .icon{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .hero-area{
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .logo-section{
+        visibility: hidden;
+    }
+    main{
+        margin-top: 200px;
+    }
+    .section-left{
+        align-items: center;
+        margin-left: 30px;
+        order: 2;
+    }
+    .section-right{
+        background-image: none;
+    }
+    .section-left p{
+        font-size: 20px;
+    }
+    .section-right img{
+        width: 80%;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .bonus{
+        grid-template-columns: 1fr;
+        padding-bottom: 100px;
+        padding-top: 0;
+        margin: 0;
+    }
+    .left img{
+        width: 100%;
+        height: 100%;
+    }
+    .right{
+        padding: 20px 0;
+    }
+    .right p{
+        font-size: 20px;
+    }
+}
