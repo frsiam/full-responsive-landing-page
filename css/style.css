@@ -156,11 +156,15 @@ header{
 /* card section start  */
 
 .card-section{
-    margin: 100px 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0px 40px;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 .card-header{
     text-align: center;
@@ -170,7 +174,8 @@ header{
     margin: 40px 0;
     padding:20px 10px 0px 20px;
     width: 340px;
-    box-shadow: 0 0 24px -7px #FF008E;
+    box-shadow: 0 0 24px -7px #CAD5E2;
+    border-radius: 5px;
 }
 .card-title{
     margin: 10px 0;
@@ -203,4 +208,39 @@ header{
     line-height: 1.5;
     color: gray;
     padding: 10px;
+}
+
+
+/* card section end  */
+
+#see-more{
+    margin-right: 20px;
+    margin-bottom: 50px;
+    padding: 0;
+    display: grid;
+    justify-content: flex-end;
+}
+#see-more i{
+    margin-left: 20px;
+    
+}
+.see-button{
+    color: rgb(255, 0, 128);
+    outline: 0;
+    border: 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    /* text-transform: uppercase;
+    background-image: linear-gradient(90deg, #E21717,#FF008E);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #bb106e;
+    position: relative;
+    top: 0; */
+    cursor: pointer;
+}
+.see-button:hover{
+    background-image: linear-gradient(90deg, #383CC1,#FF008E);
+    color: whitesmoke;
 }
