@@ -141,6 +141,11 @@ header{
     padding: 60px 0;
     width: 100%;
 }
+.logo-section img:hover{
+    transform: scale(1.4) rotate(360deg);
+    transition: transform ease-in-out 1s;
+    cursor: pointer;
+}
 
 /* logo section  end */
 
@@ -167,6 +172,10 @@ header{
     width: 340px;
     box-shadow: 0 0 24px -7px #CAD5E2;
     border-radius: 5px;
+}
+.card-body:hover{
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.5s;
 }
 .card-title{
     margin: 10px 0;
